@@ -31,6 +31,9 @@
 
 <body>
 
+  <div id="progressbar"></div>
+  <div id="Scrollpath"></div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
@@ -604,6 +607,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    let Progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let ProgressHeight = (window.pageYOffset / totalHeight) * 100;
+        Progress.style.height = ProgressHeight + "%";
+    }
+</script>
 
 </body>
 
