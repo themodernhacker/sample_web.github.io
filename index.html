@@ -30,9 +30,9 @@
 </head>
 
 <body>
-
-  <div id="progressbar"></div>
-  <div id="Scrollpath"></div>
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
@@ -339,7 +339,7 @@
 
     </div><!-- End Interests -->
 
-    <!-- ======= Testimonials =======  -->
+    <!-- ======= Testimonials ======= 
     <div class="testimonials container">
 
       <div class="section-title">
@@ -403,7 +403,7 @@
           <h4>Entrepreneur</h4>
         </div>
 
-      </div>
+      </div> -->
 
     </div><!-- End Testimonials  --> 
 
@@ -608,14 +608,12 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script type="text/javascript">
-    let Progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-        let ProgressHeight = (window.pageYOffset / totalHeight) * 100;
-        Progress.style.height = ProgressHeight + "%";
-    }
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
 </body>
 
