@@ -815,13 +815,15 @@ section .container {
 .Resume .icon-box:hover h4 a, .Resume .icon-box:hover p {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# For Green Colour line
 
 #Resume p span {
   color: #fff;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 2px;
 }
-
+--------------------------------------------------------------*/
 
 
 
